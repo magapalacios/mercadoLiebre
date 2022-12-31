@@ -1,0 +1,295 @@
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto";
+}
+
+/*------todos------*/
+
+.bg-yellow {
+  background: #eac926;
+}
+
+.p-8px {
+  padding: 8px;
+}
+
+.p-topandbottom8px {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wd-100 {
+  width: 100%;
+}
+
+/*-------header------*/
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.img-header {
+  width: 50%;
+}
+
+.buscar {
+  align-self: center;
+  display: flex;
+  justify-content: end;
+  width: 40%;
+}
+
+.input-buscar {
+  padding: 8px;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.buscar-button {
+  background-color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+.text-header {
+  width: 100%;
+}
+
+.nav-bar {
+  display: none;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.barraNavegacion{
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+}
+
+.burguer-button {
+  width: 100%;
+}
+
+.fa-bars {
+  background-color: #1259c3;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  margin-top: 10px;
+}
+
+/*-------body------*/
+
+.main {
+  width: 90vw;
+  margin: auto;
+}
+
+.main-section {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+}
+
+.headline {
+  font-size: 24px;
+  color: #666;
+  width: 100%;
+
+  margin: auto;
+  display: block;
+}
+
+.article-producto {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.div-productos {
+  border-top: solid 1px #ebebeb;
+  background-color: white;
+  padding: 15px;
+  margin-top: -4px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.precios {
+  font-size: 18px;
+  flex-grow: 0.7;
+}
+
+.descuentos {
+  font-size: 16px;
+  color: #39b54a;
+  flex-grow: 0.3;
+  align-self: center;
+}
+
+.truck-icon {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  color: #39b54a;
+  flex-wrap: wrap;
+}
+
+.descripciones {
+  font-size: 16px;
+  display: none;
+}
+
+/*-------footer------*/
+
+.footer-section {
+  text-align: center;
+  /*display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 33%;*/
+}
+
+.footer-p {
+  margin: auto;
+  width: 50%;
+}
+
+.footer-icons {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+
+@media (min-width: 481px) {
+  .buscar {
+    width: 30%;
+  }
+
+  .img-header {
+    width: 30%;
+  }
+
+  .text-header {
+    width: 30%;
+    align-self: center;
+    font-size: 12px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .article-producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 40%;
+  }
+
+  .descripciones {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .burguer-button {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .article-producto {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 20%;
+  }
+}
+
+/*-------register------*/
+
+.body-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 8px;
+}
+
+.body-form label {
+  padding: 8px 0px;
+  width: 100%;
+}
+
+.body-form label h2 {
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.body-form input {
+  border: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.body-perfil input {
+  margin: 0px 15px;
+  width: min-content;
+}
+
+.body-intereses {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body-intereses input {
+  margin-right: 15px;
+  width: min-content;
+}
+
+.body-intereses label {
+  width: 90%;
+}
+
+.body-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0px;
+  
+  /*background-color: #f2f534;
+    border: none;
+    color: #ffff;
+    padding: 10px 25px;
+    border-radius: 6px;
+  font-size: 1em;
+  box-shadow: 0 2px 4px #0e0e0e;
+
+    cursor: pointer;*/
+}
