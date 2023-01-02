@@ -1,9 +1,18 @@
+
+/* Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
 body {
   background-color: #ebebeb;
   font-family: "Roboto";
 }
 
-/*------todos------*/
+/*------general------*/
 
 .bg-yellow {
   background: #eac926;
@@ -50,18 +59,19 @@ body {
   padding: 8px;
   border: none;
   width: 100%;
-  border-radius: 6px;
+  border-radius: 5px 0 0 5px;
 }
 
 .buscar-button {
   background-color: white;
   padding: 8px;
   border: none;
-  border-radius: 6px;
+  border-radius: 0 5px 5px 0;
 }
 
 .text-header {
   width: 100%;
+  font-size: medium;
 }
 
 .nav-bar {
@@ -180,14 +190,21 @@ body {
 .footer-p {
   margin: auto;
   width: 50%;
+  margin-bottom: 15px;
 }
 
 .footer-icons {
   font-size: 2em;
   margin-bottom: 10px;
   color: #1259c3;
+
 }
 
+.derechos {
+  text-align: center;
+  padding-bottom: 8px;
+}
+/*361*/
 @media (min-width: 481px) {
   .buscar {
     width: 30%;
@@ -213,10 +230,29 @@ body {
   .article-producto {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 40%;
+    transition: all, 0.75s;
+  }
+  .article-producto:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .article-producto:hover .truck-icon {
+    animation: truck 0.5s 1;
+  }
+
+  @keyframes truck {
+    0% {
+      transform: rotateZ(360deg);
+    }
+  }
+
+  .article-producto:hover .descripciones {
+    display: block;
+    animation: descripciones 0.75s 1;
   }
 
   .descripciones {
-    display: inline-block;
+    display: none;
     width: 100%;
   }
 
@@ -230,6 +266,29 @@ body {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 20%;
   }
+  .submit-button:hover {
+    background-color: #0022aa;
+  }
+
+  .footer-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .footer-article {
+    padding: 15px 15px;
+  }
+
+  .footer-icons:hover {
+    color: #eac926;
+    transition: all, 0.5s;
+  }
+
+  .footer-p {
+    width: 100%;
+  }
+ 
 }
 
 /*-------register------*/
@@ -282,6 +341,12 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 16px 0px;
+
+  /* log in */
+
+.submit-button {
+  transition: all, 0.3s;
+}
   
   /*background-color: #f2f534;
     border: none;
